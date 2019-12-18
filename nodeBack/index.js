@@ -38,8 +38,13 @@ db.sequelize
         console.log("Create table");
         app.delete("/api/deleterole/:id", controller.deleteRole);
         initial();
-
     });
+/** .catch(function(err) {
+    // print the error details
+    console.log(err);
+});*/
+
+
 
 
 /** Create a Server */
