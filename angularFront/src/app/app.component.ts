@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'L F S ?';
+  title = 'L F S ? - Portal para contratacion de servicios informaticos'  ;
 
 
 

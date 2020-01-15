@@ -1,9 +1,9 @@
 'use strict';
 
 const express = require('express');
-const activateAccount = require('../controllers/account/activate-account');
-const createAccountController = require('../controllers/create-account-controller');
-const login = require('../controllers/login-controller');
+const activateAccount = require('../controller/account/activate-account');
+const createAccountController = require('../controller/create-account-controller');
+const login = require('../controller/login-controller');
 
 const router = express.Router();
 

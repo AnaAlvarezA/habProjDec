@@ -117,31 +117,6 @@ exports.userContent = (req, res) => {
 };
 
 
-exports.managementBoard = (req, res) => {
-    User.findOne({
-            where: { id: req.userId },
-            attributes: ["name", "username", "email"],
-            include: [{
-                model: Role,
-                attributes: ["id", "name"],
-                through: {
-                    attributes: ["userId", "roleId"]
-                }
-            }]
-        })
-        .then(user => {
-            res.status(200).send({
-                description: ">>> Project Management Board",
-                user: user
-            });
-        })
-        .catch(err => {
-            res.status(500).send({
-                description: "Can not access Management Board",
-                error: err
-            });
-        });
-};
 
 /** SERVICES */
 

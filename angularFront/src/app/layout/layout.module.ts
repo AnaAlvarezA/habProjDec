@@ -8,6 +8,8 @@ import { MainStartComponent } from './main-start/main-start.component';
 import { NavigationHomeComponent } from './navigation-home/navigation-home.component';
 import { NavigationStartComponent } from './navigation-start/navigation-start.component';
 import { NavigationPrivateComponent } from './navigation-private/navigation-private.component';
+import { NavigationProviderComponent } from '../layout/navigation-provider/navigation-provider.component';
+import { NavigationClientComponent } from '../layout/navigation-client/navigation-client.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { NavigationPrivateComponent } from './navigation-private/navigation-priv
     MainStartComponent,
     NavigationHomeComponent,
     NavigationStartComponent,
-    NavigationPrivateComponent],
+    NavigationPrivateComponent,
+    NavigationProviderComponent,
+    NavigationClientComponent],
   imports: [
     CommonModule,
     MDBBootstrapModule.forRoot(),
@@ -25,6 +29,8 @@ import { NavigationPrivateComponent } from './navigation-private/navigation-priv
     MainStartComponent,
     NavigationHomeComponent,
     NavigationStartComponent,
-    NavigationPrivateComponent]
+    NavigationPrivateComponent,
+    NavigationProviderComponent,
+    NavigationClientComponent]
 })
 export class LayoutModule { }

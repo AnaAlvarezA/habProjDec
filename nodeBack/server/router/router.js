@@ -25,12 +25,10 @@ module.exports = function(app) {
 
     app.post("/api/auth/signin", controller.signin);
 
-    app.get("/api/test/cliente", [authJwt.verifyToken], controller.userContent);
+    app.get("/api/test/client", [authJwt.verifyToken], controller.userContent);
 
-    app.get(
-        "/api/test/proveedor", [authJwt.verifyToken, authJwt.isProveedorOrAdmin],
-        controller.managementBoard
-    );
+    app.get("/api/test/provider", [authJwt.verifyToken, authJwt.isProveedorOrAdmin],
+        controller.userContent);
 
 
 

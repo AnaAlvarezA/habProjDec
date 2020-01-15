@@ -12,10 +12,17 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ServicesComponent } from './services/services.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
-  declarations: [HomeComponent, PrivateAreaComponent, LoginComponent, RegisterComponent, NotfoundComponent, ServicesComponent],
+  declarations: [HomeComponent,
+    PrivateAreaComponent,
+    LoginComponent,
+    RegisterComponent,
+    NotfoundComponent,
+    ServicesComponent,
+    ProfileComponent],
   imports: [
     CommonModule,
     MDBBootstrapModule.forRoot(),
@@ -23,7 +30,13 @@ import { ServicesComponent } from './services/services.component';
     LayoutModule,
     FormsModule
   ],
-  exports: [HomeComponent, PrivateAreaComponent, LoginComponent, RegisterComponent, NotfoundComponent, ServicesComponent]
+  exports: [HomeComponent,
+    PrivateAreaComponent,
+    LoginComponent,
+    RegisterComponent,
+    NotfoundComponent,
+    ServicesComponent,
+    ProfileComponent]
 
 })
 export class FeaturesModule { }

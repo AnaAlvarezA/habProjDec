@@ -14,8 +14,8 @@ const db = require("./server/config/db.config.js");
 
 const Role = db.role;
 
-const controller = require("./server/controller/controller.js");
-
+const controller = require("./server/controller/create-account-controller");
+const router = require("./server/controller/controller");
 
 /**  Create table if not exists */
 
